@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Capitulo_8_y_9</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Capitulo 8\Ejercicio 3\" />
+    <Folder Include="Capitulo 8\Ejercicio 5\" />
+    <Folder Include="Capitulo 9\Ejercicio 1\" />
+    <Folder Include="Capitulo 9\Ejercicio 3\" />
+    <Folder Include="Capitulo 9\Ejercicio 4\" />
+  </ItemGroup>
+
+</Project>
