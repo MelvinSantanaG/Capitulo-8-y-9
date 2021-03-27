@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Capitulo_8_y_9.Capitulo_8;
+using Capitulo_8_y_9.Capitulo_9;
+using System;
 using System.Windows.Forms;
 
 namespace Capitulo_8_y_9
@@ -17,5 +12,16 @@ namespace Capitulo_8_y_9
             InitializeComponent();
         }
 
+        private void Capitulo8Button_Click(object sender, EventArgs e)
+        {
+            var Menu = new Capitulo8EjerciciosForm();
+            Menu.Show();
+        }
+
+        private void Capitulo9Button_Click(object sender, EventArgs e)
+        {
+            var Menu = new Capitulo9EjerciciosForm();
+            Menu.Show();
+        }
     }
 }

@@ -5,14 +5,16 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Capitulo_8_y_9</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>tarea.ico</ApplicationIcon>
+    <StartupObject></StartupObject>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Capitulo 8\Ejercicio 3\" />
-    <Folder Include="Capitulo 8\Ejercicio 5\" />
-    <Folder Include="Capitulo 9\Ejercicio 1\" />
-    <Folder Include="Capitulo 9\Ejercicio 3\" />
-    <Folder Include="Capitulo 9\Ejercicio 4\" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
 
 </Project>
