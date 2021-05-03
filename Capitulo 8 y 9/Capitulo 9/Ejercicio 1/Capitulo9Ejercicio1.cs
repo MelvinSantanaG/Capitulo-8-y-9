@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Capitulo_8_y_9.Capitulo_9.Exercise_1
 {
@@ -10,27 +11,27 @@ namespace Capitulo_8_y_9.Capitulo_9.Exercise_1
         }
 
         /*1 Crear una estructura para guardar los productos de una tienda.*/
-        /*public struct Productos
+        public struct Products
         {
-            public string nombre;
-            public double precio;
+            public string name;
+            public double price;
 
-            public Productos(string Nombre, double Precio)
+            public Products(string Name, double Price)
             {
-                nombre = Nombre;
-                precio = Precio;
+                name = Name;
+                price = Price;
             }
         }
 
-        Productos[] productos = new Productos[10];
-        int acumulador = 0;
+        readonly Products[] products = new Products[10];
+        int accumulator;
 
-        private void GuardarButton_Click(object sender, EventArgs e)
+        private void SaveButton_Click(object sender, System.EventArgs e)
         {
-            productos[acumulador].precio = Convert.ToDouble(PrecioTextBox.Text);
-            productos[acumulador].nombre = NombreTextBox.Text;
-            acumulador++;
-        }*/
+            products[accumulator].name = NameTextBox.Text;
+            products[accumulator].price = Convert.ToDouble(PriceTextBox.Text);
+            accumulator++;
+        }
     }
 }
 

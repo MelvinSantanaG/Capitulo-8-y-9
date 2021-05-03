@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace Capitulo_8_y_9.Capitulo_9.Exercise_4
 {
@@ -12,43 +13,43 @@ namespace Capitulo_8_y_9.Capitulo_9.Exercise_4
         /*4 Crear una enumeración para los diferentes tipos de neumáticos.*/
         enum tiposNeumaticos { verano, invierno, deportivos, dePista, todoTerreno, antiPincho, todoTiempo, otros }
 
-        /*public void Tipos()
+        public void Types()
         {
             tiposNeumaticos neumaticos = tiposNeumaticos.antiPincho;
-            int opcion = Convert.ToInt32(NumeroTextBox.Text);
+            int option = Convert.ToInt32(NumberTextBox.Text);
 
-            switch (opcion)
+            switch (option)
             {
                 case 1:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.verano);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.verano);
                     break;
 
                 case 2:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.invierno);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.invierno);
                     break;
 
                 case 3:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.deportivos);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.deportivos);
                     break;
 
                 case 4:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.dePista);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.dePista);
                     break;
 
                 case 5:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.todoTerreno);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.todoTerreno);
                     break;
 
                 case 6:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.antiPincho);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.antiPincho);
                     break;
 
                 case 7:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.todoTiempo);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.todoTiempo);
                     break;
 
                 case 8:
-                    OpcionTextBox.Text = Convert.ToString(tiposNeumaticos.otros);
+                    OptionListBox.Text = Convert.ToString(tiposNeumaticos.otros);
                     break;
 
                 default:
@@ -57,10 +58,10 @@ namespace Capitulo_8_y_9.Capitulo_9.Exercise_4
             }
         }
 
-        private void MostrarButton_Click(object sender, EventArgs e)
+        private void DisplayButton_Click(object sender, System.EventArgs e)
         {
-            Tipos();
-        }*/
+            Types();
+        }
     }
 }
 
